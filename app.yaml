@@ -13,6 +13,3 @@ handlers:
   static_files: index.html
   upload: index.html
   secure: always
-- url: /.*
-  script: _go_app
-  secure: always
