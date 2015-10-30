@@ -4,7 +4,7 @@ api_version: 1
 handlers:
 - url: /
   static_files: static/index.html
-  upload: static/index.html
+  upload: index.html
 - url: /(.+)/
   static_files: static/\1/index.html
   upload: static/(.+)/index.html
