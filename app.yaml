@@ -13,6 +13,7 @@ handlers:
 - url: /(.+)/
   static_files: index.html
   upload: index.html
+  secure: optional
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
