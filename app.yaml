@@ -1,5 +1,5 @@
-runtime:  goppython
-api_version: go1
+runtime:  python
+api_version: g
 
 handlers:
 - url: /static
