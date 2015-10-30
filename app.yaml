@@ -5,10 +5,13 @@ handlers:
 - url: /static
   static_dir: static
   secure: always
-
 - url: /(.+)/
   static_files: static/\1/index.html
   upload: static/(.+)/index.html
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+- url: /favicon.ico
+  static_files: static/favicon/favicon.ico
+  upload: static/favicon/favicon.ico
+  secure: always
