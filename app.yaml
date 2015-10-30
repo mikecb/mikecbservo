@@ -26,4 +26,4 @@ handlers:
 - url: /favicon.ico
   static_files: static/favicon/favicon.ico
   upload: static/favicon/favicon.ico
-  secure: al
+  secure: optional
