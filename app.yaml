@@ -1,4 +1,4 @@
-runtime:  go
+runtime:  goppython
 api_version: go1
 
 handlers:
