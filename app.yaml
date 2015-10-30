@@ -9,7 +9,7 @@ handlers:
   secure: optional
 - url: /static
   static_dir: static
-  
+  secure: optional
 - url: /(.+)/
   static_files: index.html
   upload: index.html
