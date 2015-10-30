@@ -1,4 +1,4 @@
-runtime:  python
+runtime:  go
 api_version: g
 
 handlers:
