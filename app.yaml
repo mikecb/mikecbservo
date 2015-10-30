@@ -8,6 +8,7 @@ handlers:
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  
 - url: /favicon.ico
   static_files: static/favicon/favicon.ico
   upload: static/favicon/favicon.ico
