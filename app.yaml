@@ -12,7 +12,10 @@ handlers:
   mime_type: text/html
   static_files: static/\1
   upload: static/(.*\.html)
-
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: static/\1
+  upload: static/(.*\.css)
 - url: /favicon.ico
   static_files: static/favicon/favicon.ico
   upload: static/favicon/favicon.ico
