@@ -9,10 +9,9 @@ handlers:
   static_files: static/favicon/favicon.ico
   upload: static/favicon/favicon.ico
   secure: always
-- url: /
-  static_files: index.html
-  upload: index.html
-  secure: always
+- url: /(.+)/
+  static_files: static/\1/index.html
+  upload: static/(.+)/index.html
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
