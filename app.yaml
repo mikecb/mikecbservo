@@ -14,10 +14,7 @@ handlers:
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
-- url: /(.*\.html)
-  mime_type: text/html
-  static_files: static/\1
-  upload: static/(.*\.html)
+
 - url: /(.*\.css)
   mime_type: text/css
   static_files: static/\1
