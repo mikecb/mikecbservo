@@ -6,7 +6,7 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
-  secure: optional
+  secure: a
 - url: /static
   static_dir: static
   secure: optional
