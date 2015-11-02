@@ -22,7 +22,7 @@ handlers:
   mime_type: text/css
   static_files: static/\1
   upload: static/(.*\.css)
-  secure: optional
+  secure: always
 - url: /(.*\.txt)
   mime_type: text/plain
   static_files: static/\1
