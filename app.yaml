@@ -27,4 +27,4 @@ handlers:
   mime_type: text/plain
   static_files: static/\1
   upload: static/(.*\.txt)
-  secure: optional
+  secure: always
