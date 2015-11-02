@@ -23,7 +23,8 @@ handlers:
   static_files: static/\1
   upload: static/(.*\.css)
   secure: optional
-- url: /favicon.ico
-  static_files: static/favicon/favicon.ico
-  upload: static/favicon/favicon.ico
+- url: /(.*\.txt)
+  mime_type: text/plain
+  static_files: static/\1
+  upload: static/(.*\.txt)
   secure: optional
