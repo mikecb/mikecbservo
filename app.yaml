@@ -28,4 +28,3 @@ handlers:
   static_files: static/\1
   upload: static/(.*\.txt)
   secure: always
-
