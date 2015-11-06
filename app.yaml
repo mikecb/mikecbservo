@@ -30,5 +30,5 @@ handlers:
   secure: always
 - url: /.well_known/acme-challenge/*
   mime_type: text/plain
-  static_files: static/.well_known/acme-challenge
+  static_files: static/.well_known/acme-challenge/\1
   upload: static/.well_known/acme-challenge/qf0b_wouOENKJxCGP_ZaPH2gyozpnPQHMAsZ_ZZpSS8
