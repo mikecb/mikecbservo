@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/static/home.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-deep_orange.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="static/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+    .demo-layout-transparent {
+      background: url('../assets/demos/transparent.jpg') center / cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: white;
+    }
+    </style>
+
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">mikecb.org</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/about.html">about</a>
+          <a class="mdl-navigation__link" href="blog.mikecb.org">blog</a>
+          <a class="mdl-navigation__link" href="/tools.html">tools</a>
+          <a class="mdl-navigation__link" href="/projects.html">projects</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+      </main>
+    </div>
     <div class="name">Michael C. Brown</div>
     <div class="title">Lawyer, Economist, Armchair Adventurer</div>
 
