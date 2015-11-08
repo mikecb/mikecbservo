@@ -20,6 +20,7 @@ span {
 .title {
     text-align: center;
     color: #FFFFFF;
+    line-height: 68px;
 }
 .logos {
     position: absolute;
