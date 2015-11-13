@@ -3,9 +3,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /\.well-known/acme-challenge
-  static_dir: static/
-  mime_type: text/plain
+- url: /static
+  static_dir: static
+  secure: always
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
   upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
@@ -24,4 +24,3 @@ handlers:
   static_files: index.html
   upload: index.html
   secure: always
-
