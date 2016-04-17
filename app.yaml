@@ -7,11 +7,21 @@ default_expiration: "4d"
 
 
 handlers:
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: static/\1
+  upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  secure: always
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: static/\1
+  upload: static/(.*\.css)
+  secure: always
+- url: /(.*\.txt)
+  mime_type: text/plain
+  static_files: static/\1
+  upload: static/(.*\.txt)
+  secure: always
 - url: /
   static_files: static/index.html
   upload: static/index.html
-  secure: always
-- url: /(.*)
-  static_files: static/\1
-  upload: static
   secure: always
