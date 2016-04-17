@@ -7,10 +7,6 @@ default_expiration: "4d"
 
 
 handlers:
-- url: /static
-  static_dir: static
-  secure: always
 - url: /
-  static_files: index.html
-  upload: index.html
+  static_dir: static
   secure: always
