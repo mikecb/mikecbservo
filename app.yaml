@@ -7,11 +7,22 @@ default_expiration: "4d"
 
 
 handlers:
+- url: /pages
+  static_dir: static/pages
+  secure: always
+- url: /images
+  static_dir: static/images
+  secure: always
+- url: /stylesheets
+  mime_type: text/css
+  static_dir: static/stylesheets
+  secure: always
+- url: /(.*\.txt)
+  mime_type: text/plain
+  static_files: static/\1
+  upload: static/(.*\.txt)
+  secure: always
 - url: /
   static_files: static/index.html
   upload: static/index.html
-  secure: always
-- url: /(.*)
-  static_files: static/\1
-  upload: static
   secure: always
