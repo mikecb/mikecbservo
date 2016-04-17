@@ -7,14 +7,15 @@ default_expiration: "4d"
 
 
 handlers:
-- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
-  static_files: static/\1
-  upload: static/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+- url: /pages
+  static_dir: static/pages
   secure: always
-- url: /(.*\.css)
+- url: /images
+  static_dir: static/images
+  secure: always
+- url: /stylesheets
   mime_type: text/css
-  static_files: static/\1
-  upload: static/(.*\.css)
+  static_dir: static/stylesheets
   secure: always
 - url: /(.*\.txt)
   mime_type: text/plain
