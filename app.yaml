@@ -9,52 +9,52 @@ handlers:
   static_dir: static/pages
   secure: always
   http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self'; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self'; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
 - url: /images
   static_dir: static/images
   secure: always
 	http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
 - url: /stylesheets
   mime_type: text/css
   static_dir: static/stylesheets
   secure: always
   http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
 - url: /js
   mime_type: text/javascript
   static_dir: static/js
   secure: always
   http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
 - url: /(.*\.txt)
   mime_type: text/plain
   static_files: static/\1
   upload: static/(.*\.txt)
   secure: always
   http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
 - url: /
   static_files: static/index.html
   upload: static/index.html
   secure: always
   http_headers:
-  Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
-  X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection: "1; mode=block"
-  X-Content-Type-Options: nosniff
+    Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
+    X-Frame-Options: SAMEORIGIN
+    X-Xss-Protection: "1; mode=block"
+    X-Content-Type-Options: nosniff
