@@ -39,7 +39,7 @@ handlers:
   X-Frame-Options SAMEORIGIN
   X-Xss-Protection "1; mode=block"
   X-Content-Type-Options nosniff
-- rl: /(.*\.txt)
+- url: /(.*\.txt)
   mime_type: text/plain
   static_files: static/\1
   upload: static/(.*\.txt)
