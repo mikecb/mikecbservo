@@ -4,7 +4,6 @@ threadsafe: true
 
 default_expiration: "4d"
 
-
 handlers:
 - url: /pages
   static_dir: static/pages
