@@ -17,6 +17,10 @@ handlers:
   mime_type: text/css
   static_dir: static/stylesheets
   secure: always
+- url: /js
+  mime_type: text/javascript
+  static_dir: static/js
+  secure: always
 - url: /(.*\.txt)
   mime_type: text/plain
   static_files: static/\1
