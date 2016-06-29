@@ -47,8 +47,7 @@ handlers:
   http_headers:
   Content-Security-Policy-Report-Only: "default-src https:; script-src 'self' 'unsafe-inline' https://*.mikecb.org https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https:*.googleapis.com; img-src 'self' ; upgrade-insecure-requests; block-all-mixed-content;"
   X-Frame-Options SAMEORIGIN
-   X-Xss-Protection "1; mode=block"
-        X-Content-Type-Options nosniff
+  X-Xss-Protection "1; mode=block"X-Content-Type-Options nosniff
 - url: /
   static_files: static/index.html
   upload: static/index.html
